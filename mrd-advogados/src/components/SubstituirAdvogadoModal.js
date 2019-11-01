@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 
 class SubstituirAdvogadoModal extends Component {
+
     constructor(props) {
         super(props);
     }
