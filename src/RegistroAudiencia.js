@@ -1,6 +1,5 @@
 import React from 'react';
-import { Grid, FormControl, Input, InputLabel, Button } from '@material-ui/core';
-import logo from './logo.svg';
+import { TextareaAutosize, Grid, FormControl, Input, InputLabel, Button } from '@material-ui/core';
 import './App.css';
 import Navbar from './components/Navbar'
 
@@ -8,6 +7,7 @@ function App() {
   return (
 
     <div>
+      <Navbar /><br />
       <Grid
         container
         spacing={0}
@@ -25,8 +25,7 @@ function App() {
           </FormControl>
           <br />
           <FormControl>
-            <InputLabel htmlForm="descricao">Recomendação</InputLabel>
-            <Input id="descricao" />
+            <TextareaAutosize placeholder="Descrição" id="descricao" />
           </FormControl>
           <br />
           
